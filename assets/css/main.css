@@ -2593,3 +2593,7 @@ a.pdf::after {
   margin: 0px 8px;
   background-color: #3a3939;
 }
+
+#header nav {
+  color: white;
+}
