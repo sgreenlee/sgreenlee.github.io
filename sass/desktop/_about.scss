@@ -1,0 +1,24 @@
+section.about {
+  .img-container {
+    position: absolute;
+    max-height: 540px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  article {
+    position: absolute;
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 48px;
+      line-height: 48px;
+      vertical-align: text-top;
+    }
+
+
+  }
+}

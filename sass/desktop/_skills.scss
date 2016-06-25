@@ -1,0 +1,48 @@
+section.skills {
+  article {
+    text-align: center;
+  }
+
+  .grid {
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 0px 5%;
+    height: calc(100% - 80px);
+
+    .exit-right {
+      position: relative;
+      right: -2000px;
+      top: 0px;
+      transition: right .8s;
+    }
+
+    .exit-left {
+      position: relative;
+      left: -4000px;
+      top: 0px;
+      transition: left .8s;
+    }
+  }
+  .grid-item {
+    width: 20%;
+    padding: 20px;
+    height: 50%;
+
+    img {
+      width: 100%;
+      height : auto;
+    }
+  }
+}
+
+.skills-group.active .grid {
+  .exit-right {
+    position: relative;
+    right: 0px;
+  }
+  .exit-left {
+    position: relative;
+    left: 0;
+  }
+}

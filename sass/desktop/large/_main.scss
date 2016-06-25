@@ -1,0 +1,49 @@
+@import "layout_vars";
+
+header {
+  width: $desktop-large-width;
+  left: $side-margin;
+  right: 0px;
+}
+
+section.about {
+  .img-container {
+    width: 486px;
+  }
+
+  article {
+    width: 540px;
+    margin-bottom: 60px;
+
+    p {
+      line-height: 44px;
+    }
+  }
+}
+
+
+section.projects {
+  article {
+    width: $desktop-large-width;
+    .left-panel {
+      width: 270px;
+      margin-right: 54px;
+    }
+
+    img {
+      width: 756px;
+      height: auto;
+    }
+  }
+}
+
+section.skills {
+  article {
+    width: $desktop-large-width;
+  }
+}
+
+footer {
+  left: $side-margin;
+  width: $desktop-large-width;
+}

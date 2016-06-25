@@ -1,0 +1,32 @@
+@import "colors";
+@import "reset";
+@import "font";
+
+@import "general";
+@import "header";
+@import "footer";
+
+$phablet-begin: 520px;
+$tablet-begin: 720px;
+$desktop-small-begin: 860px;
+$desktop-large-begin: 1200px;
+
+
+@media screen and (max-width: $phablet-begin) {
+  @import "phone/main";
+}
+
+@media screen and (min-width: $tablet-begin) and (max-width: $desktop-small-begin) {
+  @import "tablet/main";
+}
+
+@media screen and (min-width: $desktop-small-begin) {
+  @import "desktop/desktop";
+}
+
+@media screen and (min-width: $desktop-small-begin) and (max-width: $desktop-large-begin) {
+  @import "desktop/small/main";
+}
+@media screen and (min-width: $desktop-large-begin) {
+  @import "desktop/large/main";
+}

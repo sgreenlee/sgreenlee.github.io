@@ -1,0 +1,41 @@
+footer {
+  justify-content: center;
+  height: 40px;
+  box-shadow: 0px 0px 6px 2px white;
+  background: white;
+
+  ul {
+    width: 85%;
+    padding: 10px;
+    margin: 0 auto;
+
+    li {
+      position: relative;
+      font-weight: 300;
+      font-size: 14px;
+      margin-right: 20px;
+
+    }
+
+    li::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #ccc;
+      top: calc(50% - 2px);
+      right: -14px;
+    }
+
+    li:last-child {
+      margin-right: none;
+    }
+
+    li:last-child::after {
+      content: "";
+      display: none;
+    }
+  }
+}

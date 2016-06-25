@@ -1,0 +1,56 @@
+@import "layout_vars";
+
+header {
+  width: $desktop-small-width;
+  left: $side-margin;
+  right: 0px;
+}
+
+section.about {
+  .img-container {
+    width: 40.5%;
+  }
+
+  article {
+    width: 45%;
+    margin-bottom: 60px;
+
+    p {
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+}
+
+section.projects {
+  article {
+    width: $desktop-small-width;
+    .left-panel {
+      width: 25%;
+      margin-right: 5%;
+    }
+
+    img {
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
+section.skills {
+  article {
+    width: $desktop-small-width;
+  }
+
+  .grid {
+    width: 100%;
+    padding: 0px 5%;
+  }
+}
+
+
+
+footer {
+  left: $side-margin;
+  width: $desktop-small-width;
+}

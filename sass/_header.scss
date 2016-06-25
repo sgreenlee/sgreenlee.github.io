@@ -1,0 +1,79 @@
+header {
+  position: fixed;
+  display: flex;
+  top: 0px;
+  z-index: 100;
+  height: 120px;
+  background: white;
+  margin-top: 0px;
+  padding: 10px 0;
+
+  .logo {
+    align-self: flex-end;
+
+    h1 {
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    p {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin: 5px 0px;
+    }
+  }
+
+  nav {
+    align-self: flex-end;
+    font-size: 18px;
+
+    .flex {
+      justify-content: flex-end;
+    }
+
+
+    .external {
+      a {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin: 15px 10px 5px 10px;
+        padding: 5px 0px;
+        border-bottom: 2px solid transparent;
+      }
+
+      a:hover {
+        border-bottom: 2px solid $default-color;
+      }
+
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .internal {
+      a {
+        font-weight: bold;
+        margin: 5px 10px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        border-bottom: 2px solid transparent;
+      }
+
+      a:hover {
+        color: $light-blue;
+      }
+
+      a.active {
+        color: $red;
+        border-bottom: 2px solid $red;
+
+      }
+
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+
+
+  }
+}

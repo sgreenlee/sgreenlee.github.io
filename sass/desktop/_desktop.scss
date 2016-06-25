@@ -1,0 +1,14 @@
+@import "general";
+@import "header";
+@import "about";
+@import "skills";
+@import "footer";
+
+section.projects {
+  article {
+    display: flex;
+    img {
+      height: 90%;
+    }
+  }
+}
