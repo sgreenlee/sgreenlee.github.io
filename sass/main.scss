@@ -6,17 +6,20 @@
 @import "header";
 @import "footer";
 
-$phablet-begin: 520px;
-$tablet-begin: 720px;
-$desktop-small-begin: 860px;
-$desktop-large-begin: 1200px;
+
+$phone-end: 720px;
+$tablet-begin: 721px;
+$tablet-end: 860px;
+$desktop-small-begin: 861px;
+$desktop-small-end: 1200px;
+$desktop-large-begin: 1201px;
 
 
-@media screen and (max-width: $phablet-begin) {
-  @import "phone/main";
+@media screen and (max-width: $phone-end) {
+  @import "phone/phone";
 }
 
-@media screen and (min-width: $tablet-begin) and (max-width: $desktop-small-begin) {
+@media screen and (min-width: $tablet-begin) and (max-width: $tablet-end) {
   @import "tablet/main";
 }
 
@@ -24,7 +27,7 @@ $desktop-large-begin: 1200px;
   @import "desktop/desktop";
 }
 
-@media screen and (min-width: $desktop-small-begin) and (max-width: $desktop-large-begin) {
+@media screen and (min-width: $desktop-small-begin) and (max-width: $desktop-small-end) {
   @import "desktop/small/main";
 }
 @media screen and (min-width: $desktop-large-begin) {

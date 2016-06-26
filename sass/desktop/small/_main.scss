@@ -1,8 +1,8 @@
 @import "layout_vars";
 
 header {
-  width: $desktop-small-width;
-  left: $side-margin;
+  width: 100%;
+  padding: 20px $side-margin;
   right: 0px;
 }
 
@@ -31,7 +31,7 @@ section.projects {
     }
 
     img {
-      width: 70%;
+      width: 100%;
       height: auto;
     }
   }
@@ -43,8 +43,14 @@ section.skills {
   }
 
   .grid {
+    justify-content: center;
     width: 100%;
     padding: 0px 5%;
+    padding-bottom: 50px;
+  }
+  .grid-item {
+    height: 240px;
+    width: 24%;
   }
 }
 
@@ -53,4 +59,18 @@ section.skills {
 footer {
   left: $side-margin;
   width: $desktop-small-width;
+}
+
+.contact {
+  ul {
+    font-size: 28px;
+    font-weight: 300;
+  }
+  li  {
+    margin: 10px 0;
+  }
+
+  strong {
+    font-weight: 300;
+  }
 }

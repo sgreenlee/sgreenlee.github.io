@@ -1,4 +1,6 @@
 header {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   display: flex;
   top: 0px;
@@ -33,6 +35,8 @@ header {
 
 
     .external {
+      display: flex;
+      
       a {
         letter-spacing: 3px;
         text-transform: uppercase;

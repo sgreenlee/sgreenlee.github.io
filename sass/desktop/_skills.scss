@@ -25,13 +25,16 @@ section.skills {
     }
   }
   .grid-item {
-    width: 20%;
+    text-align: center;
     padding: 20px;
-    height: 50%;
+    height: 280px;
 
     img {
-      width: 100%;
-      height : auto;
+      display: block;
+      margin: auto;
+      height: 80%;
+      margin-bottom: 20px;
+      width: auto;
     }
   }
 }
@@ -45,4 +48,8 @@ section.skills {
     position: relative;
     left: 0;
   }
+}
+
+.skills-container {
+  margin-bottom: 80px;
 }

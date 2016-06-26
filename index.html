@@ -10,35 +10,37 @@
   </head>
   <body>
     <div class="container">
-      <header class="flex spread">
+      <header>
         <div class="logo">
           <h1>Sam Greenlee</h1>
           <p>Web Developer</p>
         </div>
 
-        <nav >
-            <div class="external flex">
+        <nav>
+          <div class="phone-collapse">
+            <div id="collapse-button"><span class="burger"></span></div>
+            <div class="external content" id="collapse-target">
               <a  target="_blank" class="external" href="https://github.com/sgreenlee">Github</a>
               <a  target="_blank" class="external" href="https://linkedin.com/in/samgreenlee">LinkedIn</a>
               <a  target="_blank" class="external" href="/assets/pdf/resume.pdf">Resume</a>
             </div>
-            <div id="internal-nav" class="internal flex">
-              <a href="#" class="about-group active" data-target="about">About Me</a>
-              <a href="#" class="projects-group" data-target="projects">Projects</a>
-              <a href="#" class="skills-group" data-target="skills">Skills</a>
-              <a href="#" class="contact-group" data-target="contact">Contact</a>
-            </div>
-
+          </div>
+          <div id="internal-nav" class="internal flex">
+            <a href="#" class="about-group active" data-target="about">About Me</a>
+            <a href="#" class="projects-group" data-target="projects">Projects</a>
+            <a href="#" class="skills-group" data-target="skills">Skills</a>
+            <a href="#" class="contact-group" data-target="contact">Contact</a>
+          </div>
         </nav>
       </header>
 
       <section class="about">
-        <div class="img-container about-group active flex exit-left resize">
-          <img src="http://placehold.it/480x540" alt="" class="">
+        <div class="img-container about-group active exit-left resize">
+          <img src="/assets/img/me.jpg" alt="" class="">
         </div>
         <article class="about-group active exit-right">
           <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illum nostrum repellendus vitae dolores tempore libero eum, nulla iure non itaque, a deserunt fuga temporibus, ducimus mollitia alias minima. Aut commodi fugiat quaerat, laudantium aliquam corporis. Non, quos assumenda iusto adipisci, voluptatibus eos laboriosam ea illo voluptas. Repudiandae amet aliquid labore similique quisquam quis natus quod asperiores, doloremque est ab nisi unde vel eaque. Minima non eum placeat nobis delectus consequatur velit officiis quisquam tenetur, commodi dolores quae ex nam, omnis ut ipsam. Fugiat nam quasi labore earum.</p>
+          <p>I am a New York City based web developer with experience working in Ruby, Rails, JavaScript and React.js. My background is in math and statistics, but my passion for problem solving and building things led me to full-stack web development.</p>
         </article>
       </section>
 
@@ -46,9 +48,38 @@
         <article class="projects-group exit-left resize">
           <div class="left-panel">
             <h2>Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illum nostrum repellendus vitae dolores tempore libero.</p>
+            <p>Here are some of the projects that I've been working on recently:</p>
           </div>
-          <img src="http://placehold.it/830x540" alt="" />
+          <div class="project-container">
+            <div class="project">
+              <h4><a href="http://www.checkhov-app.com">Checkhov</a></h4>
+              <img src="/assets/img/checkhov-screen.png" alt="" />
+              <p>
+                Full-stack project management application built in Rails and React
+              </p>
+            </div>
+            <div class="project">
+              <h4><a href="/harpsichord-hero">Harpsichord-Hero</a></h4>
+              <img src="/assets/img/harpshero-screen.png" alt="" />
+              <p>
+                Guitar-hero-style keyboard game built with jQuery and CSS3.
+              </p>
+            </div>
+            <div class="project">
+              <h4><a href="https://github.com/sgreenlee/bartleby">Bartleby</a></h4>
+              <img src="/assets/img/bartleby-screen.png" alt="" />
+              <p>
+                A lightweight ruby ORM that does the minimal amount of work.
+              </p>
+            </div>
+            <div class="project">
+              <h4><a href="/">Portfolio Site</a></h4>
+              <img src="/assets/img/portfolio-screen.png" alt="" />
+              <p>
+                A fully responsive personal portfolio site built in HTML, CSS3 and vanilla Javascript.
+              </p>
+            </div>
+          </div>
         </article>
       </section>
 
@@ -57,16 +88,14 @@
           <h2>Skills</h2>
             <h4>Here are some of the things I've learned:</h4>
             <ul class="grid flex">
-              <li class="grid-item exit-left"><img src="http://placehold.it/200x200" alt="" /></li>
-              <li class="grid-item exit-right"><img src="http://placehold.it/200x200" alt="" /></li>
-              <li class="grid-item exit-left"><img src="http://placehold.it/200x200" alt="" /></li>
-              <li class="grid-item exit-left"><img src="http://placehold.it/200x200" alt="" /></li>
-              <li class="grid-item exit-right"><img src="http://placehold.it/200x200" alt="" /></li>
-              <li class="grid-item exit-right"><img src="http://placehold.it/200x200" alt="" /></li>
-              <li class="grid-item exit-left"><img src="http://placehold.it/200x200" alt="" /></li>
-              <li class="grid-item exit-right"><img src="http://placehold.it/200x200" alt="" /></li>
-              <li class="grid-item exit-right"><img src="http://placehold.it/200x200" alt="" /></li>
-              <li class="grid-item exit-left"><img src="http://placehold.it/200x200" alt="" /></li>
+              <li class="grid-item exit-left"><img src="/assets/img/logos/js-logo.png" alt="" />Javascript</li>
+              <li class="grid-item exit-right"><img src="/assets/img/logos/react-logo.png" alt="" />React.js</li>
+              <li class="grid-item exit-left"><img src="/assets/img/logos/ruby-logo.png" alt="" />Ruby</li>
+              <li class="grid-item exit-left"><img src="/assets/img/logos/rails-logo.png" alt="" />Rails</li>
+              <li class="grid-item exit-right"><img src="/assets/img/logos/python-logo.png" alt="" />Python</li>
+              <li class="grid-item exit-right"><img src="/assets/img/logos/html-logo.png" alt="" />HTML5</li>
+              <li class="grid-item exit-left"><img src="/assets/img/logos/css-logo.png" alt="" />CSS3</li>
+              <li class="grid-item exit-right"><img src="/assets/img/logos/git-logo.png" alt="" />Git/Github</li>
             </ul>
         </article>
       </section>
@@ -74,15 +103,19 @@
       <section class="contact">
         <article class="contact-group exit-left main">
             <h2>Get in touch</h2>
-
+            <p>
+              Have any questions about me or my work? Don't hesitate to reach out! Here's how you can contact me:
+            </p>
+            <ul>
+              <li><strong>Email: </strong> <a href="mailto:sam.a.greenlee@gmail.com">sam.a.greenlee@gmail.com</a></li>
+              <li><strong>Github:</strong> <a href="https://github.com/sgreenlee">github.com/sgreenlee</a></li>
+              <li><strong>LinkedIn: </strong> <a href="https://linkedin.com/in/samgreenlee">linkedin.com/in/samgreenlee</a></li>
+            </ul>
         </article>
       </section>
 
       <footer>
-        <ul class="flex">
-          <li>Copyright (c) 2016 Sam Greenlee All Rights Reserved</li>
-          <li>Like my work? I'm available for hire; Get in touch!</li>
-        </ul>
+        <small>Copyright (c) 2016 Sam Greenlee All Rights Reserved</small>
       </footer>
     </div>
   </body>

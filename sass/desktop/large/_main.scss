@@ -1,8 +1,9 @@
 @import "layout_vars";
 
 header {
-  width: $desktop-large-width;
-  left: $side-margin;
+  left: 0px;
+  padding-left: $side-margin;
+  padding-right: $side-margin;
   right: 0px;
 }
 
@@ -41,9 +42,26 @@ section.skills {
   article {
     width: $desktop-large-width;
   }
+  .grid-item {
+    width: 24%;
+  }
 }
 
 footer {
   left: $side-margin;
   width: $desktop-large-width;
+}
+
+.contact {
+  ul {
+    font-size: 28px;
+    font-weight: 300;
+  }
+  li  {
+    margin: 10px 0;
+  }
+
+  strong {
+    font-weight: 300;
+  }
 }

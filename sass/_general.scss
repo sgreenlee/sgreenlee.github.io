@@ -54,3 +54,26 @@ a.external::after {
   background-image: url("../assets/img/link-ext.png");
   background-size: contain;
 }
+
+.contact a {
+  color: $light-blue;
+}
+
+
+.project {
+  a {
+    color: $light-blue;
+  }
+
+  h4 {
+    padding: 10px 0;
+  }
+  margin: 35px 0;
+
+  img {
+    box-shadow: 0px 0px 3px 1px #aaa;
+  }
+}
+.project:first-child {
+  margin-top: 0px;
+}

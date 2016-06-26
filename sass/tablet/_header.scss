@@ -1,6 +1,10 @@
 header {
-  width: 90%;
-  left: 5%;
+  position: fixed;
+  left: 0;
+  right:0;
+  top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
 
   .logo {
     h1 {

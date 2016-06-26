@@ -52,7 +52,22 @@
     });
   }
 
+  function addDropdownListener () {
+    var nav = document.getElementById("collapse-button");
+    var content = document.getElementById("collapse-target");
+    document.addEventListener("click", function (e) {
+      if (nav.contains(e.target)) {
+        addClass(content, "active");
+      }
+      else {
+        removeClass(content, "active");
+      }
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     addNavigationListeners();
+    addDropdownListener();
   });
+
 })();

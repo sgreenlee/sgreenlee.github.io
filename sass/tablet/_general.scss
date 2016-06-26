@@ -36,6 +36,12 @@ section {
   }
 }
 
+.about::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .projects {
   display: block;
 
@@ -62,15 +68,19 @@ section {
   }
 
   .grid {
+    justify-content: center;
     padding: 15px;
   }
 
   .grid-item {
-    width: 25%;
+    height: 240px;
+    width: 31%;
 
     img {
-      width: 100%;
-      height: auto;
+      display: block;
+      height: 70%;
+      margin: 20px auto;
+      width: auto;
     }
   }
 }
@@ -81,5 +91,20 @@ footer {
   }
   ul li {
     font-size: 12px;
+  }
+}
+
+
+.contact {
+  ul {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  li  {
+    margin: 10px 0;
+  }
+
+  strong {
+    font-weight: 300;
   }
 }
