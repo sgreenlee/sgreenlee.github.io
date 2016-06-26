@@ -1,7 +1,6 @@
-section.skills {
-  article {
-    text-align: center;
-  }
+.skills {
+  text-align: center;
+  width: 100%;
 
   .grid {
     justify-content: center;
@@ -27,7 +26,7 @@ section.skills {
   .grid-item {
     text-align: center;
     padding: 20px;
-    height: 280px;
+    height: 50%;
 
     img {
       display: block;
@@ -40,6 +39,7 @@ section.skills {
 }
 
 .skills-group.active .grid {
+
   .exit-right {
     position: relative;
     right: 0px;

@@ -1,8 +1,9 @@
-@import "layout_vars";
+$desktop-small-width: 90%;
+$side-margin: 5%;
 
 header {
   width: 100%;
-  padding: 20px $side-margin;
+  padding: 10px 5%;
   right: 0px;
 }
 
@@ -22,55 +23,22 @@ section.about {
   }
 }
 
-section.projects {
-  article {
-    width: $desktop-small-width;
-    .left-panel {
-      width: 25%;
-      margin-right: 5%;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-
-section.skills {
-  article {
-    width: $desktop-small-width;
-  }
-
-  .grid {
-    justify-content: center;
-    width: 100%;
-    padding: 0px 5%;
-    padding-bottom: 50px;
-  }
-  .grid-item {
-    height: 240px;
-    width: 24%;
-  }
-}
-
-
-
-footer {
-  left: $side-margin;
+section {
   width: $desktop-small-width;
+  left: $side-margin;
 }
 
-.contact {
-  ul {
-    font-size: 28px;
-    font-weight: 300;
-  }
-  li  {
-    margin: 10px 0;
-  }
-
-  strong {
-    font-weight: 300;
-  }
-}
+//
+// .contact {
+//   ul {
+//     font-size: 28px;
+//     font-weight: 300;
+//   }
+//   li  {
+//     margin: 10px 0;
+//   }
+//
+//   strong {
+//     font-weight: 300;
+//   }
+// }

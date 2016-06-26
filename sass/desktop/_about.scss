@@ -1,24 +1,20 @@
-section.about {
-  .img-container {
-    position: absolute;
-    max-height: 540px;
+.about {
+  display: flex;
 
-    img {
-      width: 100%;
-      height: auto;
-    }
+  img {
+    display: block;
+    margin-right: 6%;
+    height: 100%;
+    max-height: 440px;
+    width: auto;
   }
 
-  article {
-    position: absolute;
-    margin-bottom: 60px;
-
-    h2 {
-      font-size: 48px;
-      line-height: 48px;
-      vertical-align: text-top;
-    }
-
-
+  .description {
+    width: 47%;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 48px;
+    vertical-align: text-top;
   }
 }

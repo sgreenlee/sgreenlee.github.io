@@ -1,33 +1,24 @@
 .container {
-  padding-top: 160px;
+  padding-top: 120px;
   width: 90%;
   margin: 0px auto;
-}
-
-section {
-  margin-bottom: 60px;
 }
 
 .about {
   // display: flex;
   // justify-content: space-between;
   margin-top: 20px;
-  .img-container {
+
+  img {
     float: right;
     display: block;
     float: left;
     padding: 0px 20px 0px 0px;
-    width: 300px;
+    width: 40%;
     height: auto;
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
   }
 
-  article {
+  .description {
     display: inline;
 
     p {
@@ -44,6 +35,7 @@ section {
 
 .projects {
   display: block;
+  margin-top: 30px;
 
   .left-panel{
     width: 100%;
@@ -56,6 +48,11 @@ section {
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  .project {
+    width: 100%;
+    margin-top: 30px;
   }
 }
 
@@ -86,12 +83,8 @@ section {
 }
 
 footer {
-  ul {
-    margin: 0 auto;
-  }
-  ul li {
-    font-size: 12px;
-  }
+  width: 100%;
+  padding: 0 5%;
 }
 
 

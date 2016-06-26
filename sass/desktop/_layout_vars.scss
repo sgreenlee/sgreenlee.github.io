@@ -1,0 +1,24 @@
+$side-margin: 5%;
+$top-content-margin: 120px;
+
+.exit-left {
+  position: absolute;
+  left: -300%;
+  top: 0;
+  transition: left .5s;
+}
+
+.exit-right {
+  position: absolute;
+  right: -300%;
+  top: 0;
+  transition: right .5s;
+}
+
+.exit-left.active {
+  left: 0px;
+}
+
+.exit-right.active {
+  right: 0px;
+}

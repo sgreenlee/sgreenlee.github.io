@@ -1,14 +1,7 @@
+@import "layout_vars";
 @import "general";
 @import "header";
 @import "about";
 @import "skills";
+@import "contact";
 @import "footer";
-
-section.projects {
-  article {
-    display: flex;
-    img {
-      height: 90%;
-    }
-  }
-}

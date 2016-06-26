@@ -65,9 +65,27 @@
     });
   }
 
+  function addProjectLinkListener () {
+    var menu = document.getElementById("project-menu");
+    menu.addEventListener("click", function (e) {
+      if (e.target.tagName === "LI") {
+        var index = parseInt(e.target.attributes["data-index"].value);
+        var top = "-" + (index * 100) + "%";
+        var view = document.getElementById("project-view");
+        view.style.top = top;
+        var listItems = menu.getElementsByTagName("li");
+        [].slice.call(listItems).forEach( function (li) {
+          removeClass(li, "selected");
+        });
+        addClass(e.target, "selected");
+      }
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     addNavigationListeners();
     addDropdownListener();
+    addProjectLinkListener();
   });
 
 })();

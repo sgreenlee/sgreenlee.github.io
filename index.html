@@ -9,82 +9,86 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <h1>Sam Greenlee</h1>
+        <p>Web Developer</p>
+      </div>
+
+      <nav>
+        <div class="phone-collapse">
+          <div id="collapse-button"><span class="burger"></span></div>
+          <div class="external content" id="collapse-target">
+            <a  target="_blank" class="external" href="https://github.com/sgreenlee">Github</a>
+            <a  target="_blank" class="external" href="https://linkedin.com/in/samgreenlee">LinkedIn</a>
+            <a  target="_blank" class="external" href="/assets/pdf/resume.pdf">Resume</a>
+          </div>
+        </div>
+        <div id="internal-nav" class="internal flex">
+          <a href="#" class="about-group active" data-target="about">About Me</a>
+          <a href="#" class="projects-group" data-target="projects">Projects</a>
+          <a href="#" class="skills-group" data-target="skills">Skills</a>
+          <a href="#" class="contact-group" data-target="contact">Contact</a>
+        </div>
+      </nav>
+    </header>
     <div class="container">
-      <header>
-        <div class="logo">
-          <h1>Sam Greenlee</h1>
-          <p>Web Developer</p>
-        </div>
-
-        <nav>
-          <div class="phone-collapse">
-            <div id="collapse-button"><span class="burger"></span></div>
-            <div class="external content" id="collapse-target">
-              <a  target="_blank" class="external" href="https://github.com/sgreenlee">Github</a>
-              <a  target="_blank" class="external" href="https://linkedin.com/in/samgreenlee">LinkedIn</a>
-              <a  target="_blank" class="external" href="/assets/pdf/resume.pdf">Resume</a>
-            </div>
-          </div>
-          <div id="internal-nav" class="internal flex">
-            <a href="#" class="about-group active" data-target="about">About Me</a>
-            <a href="#" class="projects-group" data-target="projects">Projects</a>
-            <a href="#" class="skills-group" data-target="skills">Skills</a>
-            <a href="#" class="contact-group" data-target="contact">Contact</a>
-          </div>
-        </nav>
-      </header>
-
-      <section class="about">
-        <div class="img-container about-group active exit-left resize">
+        <article class="about about-group active exit-right">
           <img src="/assets/img/me.jpg" alt="" class="">
-        </div>
-        <article class="about-group active exit-right">
-          <h2>About Me</h2>
-          <p>I am a New York City based web developer with experience working in Ruby, Rails, JavaScript and React.js. My background is in math and statistics, but my passion for problem solving and building things led me to full-stack web development.</p>
+          <div class="description">
+            <h2>About Me</h2>
+            <p>I am a New York City based web developer with experience
+              working in Ruby, Rails, JavaScript and React.js. My background
+              is in math and statistics, but my passion for problem solving
+              and building things led me to full-stack web development.</p>
+          </div>
         </article>
-      </section>
-
-      <section class="projects">
-        <article class="projects-group exit-left resize">
+        <article class="projects projects-group exit-left resize">
           <div class="left-panel">
             <h2>Projects</h2>
-            <p>Here are some of the projects that I've been working on recently:</p>
+            <p>Here are some of the projects that I've been working on recently.
+              <span class="desktop-only">Click on a project below for more information:</span></p>
+            <ul id="project-menu">
+              <li class="selected" data-index="0">Checkhov</li>
+              <li data-index="1">Harpsichord-Hero</li>
+              <li data-index="2">Bartleby</li>
+              <li data-index="3">Portfolio Site</li>
+            </ul>
           </div>
           <div class="project-container">
-            <div class="project">
-              <h4><a href="http://www.checkhov-app.com">Checkhov</a></h4>
-              <img src="/assets/img/checkhov-screen.png" alt="" />
-              <p>
-                Full-stack project management application built in Rails and React
-              </p>
-            </div>
-            <div class="project">
-              <h4><a href="/harpsichord-hero">Harpsichord-Hero</a></h4>
-              <img src="/assets/img/harpshero-screen.png" alt="" />
-              <p>
-                Guitar-hero-style keyboard game built with jQuery and CSS3.
-              </p>
-            </div>
-            <div class="project">
-              <h4><a href="https://github.com/sgreenlee/bartleby">Bartleby</a></h4>
-              <img src="/assets/img/bartleby-screen.png" alt="" />
-              <p>
-                A lightweight ruby ORM that does the minimal amount of work.
-              </p>
-            </div>
-            <div class="project">
-              <h4><a href="/">Portfolio Site</a></h4>
-              <img src="/assets/img/portfolio-screen.png" alt="" />
-              <p>
-                A fully responsive personal portfolio site built in HTML, CSS3 and vanilla Javascript.
-              </p>
+            <div id="project-view">
+              <div class="project">
+                <h4><a href="http://www.checkhov-app.com">Checkhov</a></h4>
+                <img src="/assets/img/checkhov-screen.png" alt="" />
+                <p>
+                  Full-stack project management application built in Rails and React
+                </p>
+              </div>
+              <div class="project">
+                <h4><a href="/harpsichord-hero">Harpsichord-Hero</a></h4>
+                <img src="/assets/img/harpshero-screen.png" alt="" />
+                <p>
+                  Guitar-hero-style keyboard game built with jQuery and CSS3.
+                </p>
+              </div>
+              <div class="project">
+                <h4><a href="https://github.com/sgreenlee/bartleby">Bartleby</a></h4>
+                <img src="/assets/img/bartleby-screen.png" alt="" />
+                <p>
+                  A lightweight ruby ORM that does the minimal amount of work.
+                </p>
+              </div>
+              <div class="project">
+                <h4><a href="/">Portfolio Site</a></h4>
+                <img src="/assets/img/portfolio-screen.png" alt="" />
+                <p>
+                  A fully responsive personal portfolio site built in HTML, CSS3 and vanilla Javascript.
+                </p>
+              </div>
             </div>
           </div>
         </article>
-      </section>
-
-      <section class="skills">
-        <article class="skills-group exit-right main">
+        <article class="skills skills-group exit-right main">
           <h2>Skills</h2>
             <h4>Here are some of the things I've learned:</h4>
             <ul class="grid flex">
@@ -98,10 +102,8 @@
               <li class="grid-item exit-right"><img src="/assets/img/logos/git-logo.png" alt="" />Git/Github</li>
             </ul>
         </article>
-      </section>
 
-      <section class="contact">
-        <article class="contact-group exit-left main">
+        <article class="contact contact-group exit-left main">
             <h2>Get in touch</h2>
             <p>
               Have any questions about me or my work? Don't hesitate to reach out! Here's how you can contact me:
@@ -112,11 +114,10 @@
               <li><strong>LinkedIn: </strong> <a href="https://linkedin.com/in/samgreenlee">linkedin.com/in/samgreenlee</a></li>
             </ul>
         </article>
-      </section>
 
-      <footer>
-        <small>Copyright (c) 2016 Sam Greenlee All Rights Reserved</small>
-      </footer>
     </div>
+    <footer>
+      <small>Copyright (c) 2016 Sam Greenlee All Rights Reserved</small>
+    </footer>
   </body>
 </html>

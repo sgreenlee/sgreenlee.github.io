@@ -9,6 +9,7 @@ header {
   background: white;
   margin-top: 0px;
   padding: 10px 0;
+  box-shadow: 0px 0px 2px 1px #ddd;
 
   .logo {
     align-self: flex-end;
@@ -36,7 +37,7 @@ header {
 
     .external {
       display: flex;
-      
+
       a {
         letter-spacing: 3px;
         text-transform: uppercase;
