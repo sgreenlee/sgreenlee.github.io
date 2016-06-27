@@ -166,39 +166,40 @@ footer {
     width: 32px;
     height: 32px; }
 
-  #collapse-button.active .burger {
-    background: transparent; }
-  #collapse-button.active .burger::after {
+  .burger.active .main::after {
+    display: none; }
+  .burger.active .main::before {
+    display: none; }
+  .burger.active .main {
     transform: rotate(45deg); }
-  #collapse-button.active .burger::before {
+  .burger.active .off-diagonal {
     transform: rotate(-45deg); }
 
-  .burger {
+  .burger .main, .burger .off-diagonal {
+    top: 13px;
     display: block;
-    position: relative;
-    margin: 13px 0px;
+    position: absolute;
     height: 4px;
     width: 30px;
-    background: black; }
+    background: black;
+    transition: transform .4s; }
 
-  .burger::before {
+  .burger .main::before {
     content: "";
     display: block;
     position: absolute;
     transform: translateY(-10px);
     height: 4px;
     width: 30px;
-    background: black;
-    transition: transform .4s; }
+    background: black; }
 
-  .burger::after {
+  .burger .main::after {
     content: "";
     display: block;
     position: absolute;
     transform: translateY(10px);
     height: 4px;
     width: 30px;
-    transition: transform .4s;
     background: black; }
 
   #collapse-target {

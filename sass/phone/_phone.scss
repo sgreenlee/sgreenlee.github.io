@@ -29,29 +29,33 @@ h4 {
   height: 32px;
 }
 
-#collapse-button.active {
-  .burger {
-    background: transparent;
+.burger.active {
+  .main::after {
+    display: none;
+  }
+  .main::before {
+    display: none;
   }
 
-  .burger::after {
+  .main {
     transform: rotate(45deg);
   }
-  .burger::before {
+  .off-diagonal {
     transform: rotate(-45deg);
   }
 }
 
-.burger {
+.burger .main, .burger .off-diagonal {
+  top: 13px;
   display: block;
-  position: relative;
-  margin: 13px 0px;
+  position: absolute;
   height: 4px;
   width: 30px;
   background: black;
+  transition: transform .4s;
 }
 
-.burger::before {
+.burger .main::before {
   content: "";
   display: block;
   position: absolute;
@@ -59,16 +63,16 @@ h4 {
   height: 4px;
   width: 30px;
   background: black;
-  transition: transform .4s;
+  // transition: transform .4s;
 }
-.burger::after {
+.burger .main::after {
   content: "";
   display: block;
   position: absolute;
   transform: translateY(10px);
   height: 4px;
   width: 30px;
-  transition: transform .4s;
+  // transition: transform .4s;
   background: black;
 }
 
