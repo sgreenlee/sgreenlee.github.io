@@ -53,14 +53,22 @@
   }
 
   function addDropdownListener () {
-    var nav = document.getElementById("collapse-button");
+    var button = document.getElementById("collapse-button");
     var content = document.getElementById("collapse-target");
     document.addEventListener("click", function (e) {
-      if (nav.contains(e.target)) {
-        addClass(content, "active");
+      if (button.contains(e.target)) {
+        if (hasClass(button, "active")) {
+          removeClass(content, "active");
+          removeClass(button, "active");
+        }
+        else {
+          addClass(button, "active");
+          addClass(content, "active");
+        }
       }
-      else {
+      else if (!content.contains(e.target)) {
         removeClass(content, "active");
+        removeClass(button, "active");
       }
     });
   }
