@@ -553,7 +553,8 @@ footer {
     .skills .grid-item {
       text-align: center;
       padding: 20px;
-      height: 50%; }
+      height: 50%;
+      max-height: 250px; }
       .skills .grid-item img {
         display: block;
         margin: auto;
