@@ -202,6 +202,7 @@ footer {
     background: black; }
 
   #collapse-target {
+    display: none;
     position: absolute;
     margin: 0;
     right: -100%;
